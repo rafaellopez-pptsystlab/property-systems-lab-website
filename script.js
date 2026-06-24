@@ -86,6 +86,74 @@
     </style>
   `);
 
+  // --- Background code-symbol canvas ---
+  (function () {
+    const canvas = document.getElementById('bgCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    const SYMBOLS = [
+      '{ }', '=>', 'if()', 'while', '&&', '||', 'fn()', '//', '01',
+      '10', '[]', 'API', '</>', '!==', 'async', 'return', '##',
+      'for()', 'true', 'null', 'GET', 'POST', '200', '{}', '::', '>>',
+      'n8n', 'zap', 'map()', '.then', 'await', '?? ', '0x', 'log()'
+    ];
+
+    const ACCENT   = '37,99,235';   // matches --color-accent RGB
+    const MIN_OP   = 0.03;
+    const MAX_OP   = 0.11;
+    const MIN_SIZE = 11;
+    const MAX_SIZE = 15;
+    const COUNT    = 90;
+
+    let W, H, particles;
+
+    function rand(min, max) { return Math.random() * (max - min) + min; }
+
+    function makeParticle() {
+      return {
+        x:      rand(0, W),
+        y:      rand(-H, H),
+        symbol: SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
+        size:   rand(MIN_SIZE, MAX_SIZE),
+        op:     rand(MIN_OP, MAX_OP),
+        speed:  rand(0.15, 0.45),
+        drift:  rand(-0.08, 0.08),
+      };
+    }
+
+    function resize() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      particles = Array.from({ length: COUNT }, makeParticle);
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      for (const p of particles) {
+        ctx.font = `${p.size}px 'Courier New', monospace`;
+        ctx.fillStyle = `rgba(${ACCENT}, ${p.op})`;
+        ctx.fillText(p.symbol, p.x, p.y);
+
+        p.y -= p.speed;
+        p.x += p.drift;
+
+        if (p.y < -30) {
+          p.y = H + 20;
+          p.x = rand(0, W);
+          p.symbol = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
+        }
+        if (p.x < -60)  p.x = W + 20;
+        if (p.x > W + 60) p.x = -20;
+      }
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', resize, { passive: true });
+    resize();
+    draw();
+  })();
+
   // --- Smooth anchor offset (account for fixed nav height) ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
