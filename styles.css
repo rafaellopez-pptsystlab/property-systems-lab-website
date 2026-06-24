@@ -7,7 +7,9 @@
 
 :root {
   --color-bg:          #0d1117;
+  --color-bg-t:        rgba(13,17,23,0.92);
   --color-surface:     #161b22;
+  --color-surface-t:   rgba(22,27,34,0.93);
   --color-surface-alt: #1c2230;
   --color-border:      #2a3444;
   --color-accent:      #2563eb;
@@ -38,6 +40,7 @@ body {
   color: var(--color-text);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  background-attachment: fixed;
 }
 
 .container {
@@ -170,7 +173,7 @@ body > *:not(#bgCanvas) {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(13,17,23,.85);
+  background: rgba(13,17,23,.80);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -296,7 +299,7 @@ body > *:not(#bgCanvas) {
    ============================================= */
 .problems {
   padding: 96px 0;
-  background: var(--color-surface);
+  background: var(--color-surface-t);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -396,7 +399,7 @@ body > *:not(#bgCanvas) {
    ============================================= */
 .how-it-works {
   padding: 96px 0;
-  background: var(--color-surface);
+  background: var(--color-surface-t);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -576,7 +579,7 @@ body > *:not(#bgCanvas) {
    ============================================= */
 .why-us {
   padding: 96px 0;
-  background: var(--color-surface);
+  background: var(--color-surface-t);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -716,7 +719,7 @@ body > *:not(#bgCanvas) {
    FOOTER
    ============================================= */
 .footer {
-  background: var(--color-surface);
+  background: var(--color-surface-t);
   border-top: 1px solid var(--color-border);
   padding: 48px 0 40px;
 }
