@@ -86,35 +86,6 @@
     </style>
   `);
 
-  // --- Background code symbols ---
-  (function () {
-    const container = document.getElementById('codeBg');
-    if (!container) return;
-
-    const SYMBOLS = [
-      '{ }', '=>', 'if()', 'while', '&&', '||', 'fn()', '//',
-      '[]', 'API', '</>', '!==', 'async', 'return',
-      'for()', 'true', 'null', 'GET', 'POST', '{}', '::',
-      'n8n', 'map()', '.then', 'await', '0x', 'log()',
-      'zap()', '>>', 'fetch()', '01010', 'run()'
-    ];
-
-    const COUNT = 55;
-
-    for (let i = 0; i < COUNT; i++) {
-      const span       = document.createElement('span');
-      span.textContent = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-      const duration   = 15 + Math.random() * 20;
-
-      span.style.left                = (Math.random() * 100) + '%';
-      span.style.fontSize            = (11 + Math.random() * 6) + 'px';
-      span.style.animationDuration   = duration + 's';
-      span.style.animationDelay      = -(Math.random() * duration) + 's';
-
-      container.appendChild(span);
-    }
-  })();
-
   // --- Smooth anchor offset (account for fixed nav height) ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
