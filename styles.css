@@ -6,7 +6,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --color-bg:          #060a12;
+  --color-bg:          #080d16;
   --color-bg-t:        rgba(13,17,23,0.82);
   --color-surface:     #161b22;
   --color-surface-t:   rgba(22,27,34,0.84);
@@ -41,10 +41,10 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-bg);
   background-image:
-    radial-gradient(ellipse 80% 60% at 50% -5%, rgba(37,99,235,0.22) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 30% at 50% -2%, rgba(99,132,255,0.15) 0%, transparent 45%),
-    url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='0.85' fill='%232563eb' fill-opacity='0.18'/%3E%3C/svg%3E");
-  background-size: 100% 100%, 100% 100%, 28px 28px;
+    radial-gradient(ellipse 75% 55% at 50% 0%,   rgba(37,99,235,0.18)  0%, transparent 65%),
+    radial-gradient(ellipse 45% 35% at 100% 100%, rgba(37,99,235,0.08)  0%, transparent 55%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='80' x2='80' y2='0' stroke='%233b82f6' stroke-width='0.8' stroke-opacity='0.18'/%3E%3Cline x1='0' y1='0' x2='80' y2='80' stroke='%233b82f6' stroke-width='0.8' stroke-opacity='0.10'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 100% 100%, 80px 80px;
   background-repeat: no-repeat, no-repeat, repeat;
   background-attachment: fixed;
 }
@@ -291,7 +291,7 @@ img { display: block; max-width: 100%; }
    ============================================= */
 .problems {
   padding: 96px 0;
-  background: rgba(10,15,24,0.85);
+  background: rgba(8,13,22,0.86);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -391,7 +391,7 @@ img { display: block; max-width: 100%; }
    ============================================= */
 .how-it-works {
   padding: 96px 0;
-  background: rgba(10,15,24,0.85);
+  background: rgba(8,13,22,0.86);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -571,7 +571,7 @@ img { display: block; max-width: 100%; }
    ============================================= */
 .why-us {
   padding: 96px 0;
-  background: rgba(10,15,24,0.85);
+  background: rgba(8,13,22,0.86);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -711,7 +711,7 @@ img { display: block; max-width: 100%; }
    FOOTER
    ============================================= */
 .footer {
-  background: rgba(10,15,24,0.85);
+  background: rgba(8,13,22,0.86);
   border-top: 1px solid var(--color-border);
   padding: 48px 0 40px;
 }
