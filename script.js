@@ -100,8 +100,8 @@
     ];
 
     const ACCENT   = '37,99,235';   // matches --color-accent RGB
-    const MIN_OP   = 0.03;
-    const MAX_OP   = 0.11;
+    const MIN_OP   = 0.12;
+    const MAX_OP   = 0.28;
     const MIN_SIZE = 11;
     const MAX_SIZE = 15;
     const COUNT    = 90;
