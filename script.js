@@ -86,72 +86,39 @@
     </style>
   `);
 
-  // --- Background code-symbol canvas ---
+  // --- Background code symbols ---
   (function () {
-    const canvas = document.getElementById('bgCanvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
+    const container = document.getElementById('codeBg');
+    if (!container) return;
 
     const SYMBOLS = [
-      '{ }', '=>', 'if()', 'while', '&&', '||', 'fn()', '//', '01',
-      '10', '[]', 'API', '</>', '!==', 'async', 'return', '##',
-      'for()', 'true', 'null', 'GET', 'POST', '200', '{}', '::', '>>',
-      'n8n', 'zap', 'map()', '.then', 'await', '?? ', '0x', 'log()'
+      '{ }', '=>', 'if()', 'while', '&&', '||', 'fn()', '//',
+      '[]', 'API', '</>', '!==', 'async', 'return',
+      'for()', 'true', 'null', 'GET', 'POST', '{}', '::',
+      'n8n', 'map()', '.then', 'await', '0x', 'log()', '01010',
+      'zap()', 'run()', 'true', '>>', 'null', 'fetch()'
     ];
 
-    const ACCENT   = '147,197,253'; // light blue — visible over dark bg
-    const MIN_OP   = 0.55;
-    const MAX_OP   = 1.0;
-    const MIN_SIZE = 12;
-    const MAX_SIZE = 17;
-    const COUNT    = 90;
+    const COUNT = 55;
 
-    let W, H, particles;
+    for (let i = 0; i < COUNT; i++) {
+      const span        = document.createElement('span');
+      span.textContent  = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
+      const left        = Math.random() * 100;
+      const duration    = 18 + Math.random() * 22;
+      const delay       = -(Math.random() * duration);
+      const opacity     = 0.08 + Math.random() * 0.14;
+      const fontSize    = 11 + Math.random() * 5;
 
-    function rand(min, max) { return Math.random() * (max - min) + min; }
-
-    function makeParticle() {
-      return {
-        x:      rand(0, W),
-        y:      rand(-H, H),
-        symbol: SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
-        size:   rand(MIN_SIZE, MAX_SIZE),
-        op:     rand(MIN_OP, MAX_OP),
-        speed:  rand(0.15, 0.45),
-        drift:  rand(-0.08, 0.08),
-      };
+      span.style.cssText = `
+        left: ${left}%;
+        animation-duration: ${duration}s;
+        animation-delay: ${delay}s;
+        opacity: ${opacity};
+        font-size: ${fontSize}px;
+      `;
+      container.appendChild(span);
     }
-
-    function resize() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-      particles = Array.from({ length: COUNT }, makeParticle);
-    }
-
-    function draw() {
-      ctx.clearRect(0, 0, W, H);
-      for (const p of particles) {
-        ctx.font = `${p.size}px 'Courier New', monospace`;
-        ctx.fillStyle = `rgba(${ACCENT}, ${p.op})`;
-        ctx.fillText(p.symbol, p.x, p.y);
-
-        p.y -= p.speed;
-        p.x += p.drift;
-
-        if (p.y < -30) {
-          p.y = H + 20;
-          p.x = rand(0, W);
-          p.symbol = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-        }
-        if (p.x < -60)  p.x = W + 20;
-        if (p.x > W + 60) p.x = -20;
-      }
-      requestAnimationFrame(draw);
-    }
-
-    window.addEventListener('resize', resize, { passive: true });
-    resize();
-    draw();
   })();
 
   // --- Smooth anchor offset (account for fixed nav height) ---
