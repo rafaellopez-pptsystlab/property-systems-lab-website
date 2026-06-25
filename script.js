@@ -95,28 +95,22 @@
       '{ }', '=>', 'if()', 'while', '&&', '||', 'fn()', '//',
       '[]', 'API', '</>', '!==', 'async', 'return',
       'for()', 'true', 'null', 'GET', 'POST', '{}', '::',
-      'n8n', 'map()', '.then', 'await', '0x', 'log()', '01010',
-      'zap()', 'run()', 'true', '>>', 'null', 'fetch()'
+      'n8n', 'map()', '.then', 'await', '0x', 'log()',
+      'zap()', '>>', 'fetch()', '01010', 'run()'
     ];
 
     const COUNT = 55;
 
     for (let i = 0; i < COUNT; i++) {
-      const span        = document.createElement('span');
-      span.textContent  = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-      const left        = Math.random() * 100;
-      const duration    = 18 + Math.random() * 22;
-      const delay       = -(Math.random() * duration);
-      const opacity     = 0.08 + Math.random() * 0.14;
-      const fontSize    = 11 + Math.random() * 5;
+      const span       = document.createElement('span');
+      span.textContent = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
+      const duration   = 15 + Math.random() * 20;
 
-      span.style.cssText = `
-        left: ${left}%;
-        animation-duration: ${duration}s;
-        animation-delay: ${delay}s;
-        opacity: ${opacity};
-        font-size: ${fontSize}px;
-      `;
+      span.style.left                = (Math.random() * 100) + '%';
+      span.style.fontSize            = (11 + Math.random() * 6) + 'px';
+      span.style.animationDuration   = duration + 's';
+      span.style.animationDelay      = -(Math.random() * duration) + 's';
+
       container.appendChild(span);
     }
   })();
