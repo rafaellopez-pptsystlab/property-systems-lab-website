@@ -21,7 +21,7 @@ Property Systems Lab helps property management and vacation rental businesses re
 
 ## Platforms & Tools We Work With
 
-Zapier, n8n, HubSpot, Hostaway, Propertyware, PandaDoc, Google Sheets, and custom API integrations.
+Zapier, n8n, HubSpot, Hostaway, Propertyware, PandaDoc, Google Sheets, Azure, Google Cloud Platform (GCP), and custom API development and integrations.
 
 ## Pricing
 

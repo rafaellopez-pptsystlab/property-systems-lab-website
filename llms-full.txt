@@ -22,7 +22,7 @@ Property management teams commonly struggle with:
 ## Our Services
 
 ### 1. Automation & AI Systems
-We build workflows that reduce repetitive work, improve visibility, and keep teams moving. From lead follow-up sequences to maintenance notifications, we connect systems and remove the manual steps in between. Primary tools: Zapier, n8n, API integrations, trigger-based workflows.
+We build workflows that reduce repetitive work, improve visibility, and keep teams moving. From lead follow-up sequences to maintenance notifications, we connect systems and remove the manual steps in between — including custom API development and cloud-based solutions on Microsoft Azure and Google Cloud Platform (GCP). Primary tools: Zapier, n8n, custom APIs, Azure, GCP, trigger-based workflows.
 
 ### 2. CRM & Pipeline Optimization
 We clean up and organize sales, leasing, owner, and maintenance pipelines so teams always know what needs attention and nothing gets missed. Primary platform: HubSpot.
@@ -75,7 +75,7 @@ Book here: https://calendar.app.google/1VqYPNUPUgqqELjC9
 
 ## Platforms Supported
 
-Zapier, n8n, HubSpot, Hostaway, Propertyware, PandaDoc, Google Sheets, and custom API and AI integrations.
+Zapier, n8n, HubSpot, Hostaway, Propertyware, PandaDoc, Google Sheets, Microsoft Azure, Google Cloud Platform (GCP), and custom API development and AI integrations.
 
 ## Website
 
