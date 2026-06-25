@@ -32,6 +32,7 @@
   --max-w:      1180px;
 }
 
+@font-face { font-family: 'Inter'; font-display: swap; }
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
