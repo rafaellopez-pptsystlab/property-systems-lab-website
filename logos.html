@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Proposals — Property Systems Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #080d16;
+      color: #e6edf3;
+      min-height: 100vh;
+      padding: 60px 24px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8b949e;
+      margin-bottom: 64px;
+    }
+    .proposals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #0f1623;
+      border: 1px solid #1e2d45;
+      border-radius: 16px;
+      padding: 48px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .card__label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #2563eb;
+    }
+    .card__logo { display: flex; align-items: center; justify-content: center; }
+    .card__desc {
+      font-size: 0.875rem;
+      color: #6b7a8d;
+      text-align: center;
+      line-height: 1.6;
+    }
+    /* Dark + Light backgrounds for each logo */
+    .bg-dark  { background: #080d16; padding: 28px 32px; border-radius: 10px; }
+    .bg-light { background: #f0f4ff; padding: 28px 32px; border-radius: 10px; }
+    .both { display: flex; flex-direction: column; gap: 16px; width: 100%; align-items: center; }
+  </style>
+</head>
+<body>
+
+  <h1>Logo Proposals — Property Systems Lab</h1>
+
+  <div class="proposals">
+
+    <!-- ===================== LOGO A ===================== -->
+    <div class="card">
+      <div class="card__label">Option A — Connected Nodes</div>
+      <div class="both">
+        <div class="bg-dark card__logo">
+          <svg width="260" height="52" viewBox="0 0 260 52" xmlns="http://www.w3.org/2000/svg">
+            <!-- Node triangle icon -->
+            <!-- Top node -->
+            <circle cx="20" cy="8" r="4" fill="#2563eb"/>
+            <!-- Bottom-left node -->
+            <circle cx="6" cy="34" r="3.5" fill="#2563eb" opacity="0.7"/>
+            <!-- Bottom-right node -->
+            <circle cx="34" cy="34" r="3.5" fill="#2563eb" opacity="0.7"/>
+            <!-- Connector lines -->
+            <line x1="20" y1="12" x2="6" y2="31" stroke="#2563eb" stroke-width="1.2" stroke-opacity="0.5"/>
+            <line x1="20" y1="12" x2="34" y2="31" stroke="#2563eb" stroke-width="1.2" stroke-opacity="0.5"/>
+            <line x1="9" y1="34" x2="31" y2="34" stroke="#2563eb" stroke-width="1.2" stroke-opacity="0.35"/>
+            <!-- Wordmark -->
+            <text x="52" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="-0.3">Property</text>
+            <text x="52" y="36" font-family="Inter,sans-serif" font-size="13" font-weight="800" fill="#2563eb" letter-spacing="-0.3">Systems</text>
+            <text x="52" y="52" font-family="Inter,sans-serif" font-size="13" font-weight="500" fill="#8b949e" letter-spacing="0.5">LAB</text>
+          </svg>
+        </div>
+        <div class="bg-light card__logo">
+          <svg width="260" height="52" viewBox="0 0 260 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="8" r="4" fill="#1d4ed8"/>
+            <circle cx="6" cy="34" r="3.5" fill="#1d4ed8" opacity="0.7"/>
+            <circle cx="34" cy="34" r="3.5" fill="#1d4ed8" opacity="0.7"/>
+            <line x1="20" y1="12" x2="6" y2="31" stroke="#1d4ed8" stroke-width="1.2" stroke-opacity="0.5"/>
+            <line x1="20" y1="12" x2="34" y2="31" stroke="#1d4ed8" stroke-width="1.2" stroke-opacity="0.5"/>
+            <line x1="9" y1="34" x2="31" y2="34" stroke="#1d4ed8" stroke-width="1.2" stroke-opacity="0.35"/>
+            <text x="52" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="-0.3">Property</text>
+            <text x="52" y="36" font-family="Inter,sans-serif" font-size="13" font-weight="800" fill="#1d4ed8" letter-spacing="-0.3">Systems</text>
+            <text x="52" y="52" font-family="Inter,sans-serif" font-size="13" font-weight="500" fill="#64748b" letter-spacing="0.5">LAB</text>
+          </svg>
+        </div>
+      </div>
+      <p class="card__desc">Three connected nodes forming a workflow triangle. References automation pipelines and linked systems — the core of what the business does.</p>
+    </div>
+
+    <!-- ===================== LOGO B ===================== -->
+    <div class="card">
+      <div class="card__label">Option B — Circuit Building</div>
+      <div class="both">
+        <div class="bg-dark card__logo">
+          <svg width="260" height="56" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg">
+            <!-- House silhouette with circuit traces -->
+            <!-- Roof -->
+            <polyline points="22,24 36,10 50,24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linejoin="round"/>
+            <!-- Walls -->
+            <polyline points="22,24 22,44 50,44 50,24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linejoin="round"/>
+            <!-- Circuit traces extending from roof peak -->
+            <line x1="36" y1="10" x2="36" y2="4" stroke="#2563eb" stroke-width="1.2" opacity="0.6"/>
+            <line x1="36" y1="4" x2="56" y2="4" stroke="#2563eb" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="58" cy="4" r="2" fill="#2563eb" opacity="0.8"/>
+            <!-- Circuit trace from right wall -->
+            <line x1="50" y1="34" x2="58" y2="34" stroke="#2563eb" stroke-width="1.2" opacity="0.5"/>
+            <line x1="58" y1="34" x2="58" y2="44" stroke="#2563eb" stroke-width="1.2" opacity="0.5"/>
+            <circle cx="58" cy="46" r="2" fill="#2563eb" opacity="0.7"/>
+            <!-- Door -->
+            <rect x="31" y="34" width="10" height="10" rx="1" fill="none" stroke="#2563eb" stroke-width="1.2" opacity="0.7"/>
+            <!-- Wordmark -->
+            <text x="74" y="26" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="-0.4">Property Systems</text>
+            <text x="74" y="46" font-family="Inter,sans-serif" font-size="13" font-weight="500" fill="#2563eb" letter-spacing="2">LAB</text>
+          </svg>
+        </div>
+        <div class="bg-light card__logo">
+          <svg width="260" height="56" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="22,24 36,10 50,24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round"/>
+            <polyline points="22,24 22,44 50,44 50,24" fill="none" stroke="#1d4ed8" stroke-width="1.8" stroke-linejoin="round"/>
+            <line x1="36" y1="10" x2="36" y2="4" stroke="#1d4ed8" stroke-width="1.2" opacity="0.6"/>
+            <line x1="36" y1="4" x2="56" y2="4" stroke="#1d4ed8" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="58" cy="4" r="2" fill="#1d4ed8" opacity="0.8"/>
+            <line x1="50" y1="34" x2="58" y2="34" stroke="#1d4ed8" stroke-width="1.2" opacity="0.5"/>
+            <line x1="58" y1="34" x2="58" y2="44" stroke="#1d4ed8" stroke-width="1.2" opacity="0.5"/>
+            <circle cx="58" cy="46" r="2" fill="#1d4ed8" opacity="0.7"/>
+            <rect x="31" y="34" width="10" height="10" rx="1" fill="none" stroke="#1d4ed8" stroke-width="1.2" opacity="0.7"/>
+            <text x="74" y="26" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#0f172a" letter-spacing="-0.4">Property Systems</text>
+            <text x="74" y="46" font-family="Inter,sans-serif" font-size="13" font-weight="500" fill="#1d4ed8" letter-spacing="2">LAB</text>
+          </svg>
+        </div>
+      </div>
+      <p class="card__desc">A minimal house outline with circuit-board traces extending from the structure. Directly connects property management to technology without being heavy-handed.</p>
+    </div>
+
+    <!-- ===================== LOGO C ===================== -->
+    <div class="card">
+      <div class="card__label">Option C — Bracket Mark</div>
+      <div class="both">
+        <div class="bg-dark card__logo">
+          <svg width="260" height="56" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg">
+            <!-- [ / ] mark -->
+            <!-- Left bracket -->
+            <path d="M8,8 L2,8 L2,48 L8,48" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Slash -->
+            <line x1="28" y1="48" x2="16" y2="8" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Right bracket -->
+            <path d="M36,8 L42,8 L42,48 L36,48" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Wordmark -->
+            <text x="58" y="24" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="-0.2">Property Systems</text>
+            <text x="58" y="44" font-family="Inter,sans-serif" font-size="12" font-weight="800" fill="#2563eb" letter-spacing="3">LAB</text>
+          </svg>
+        </div>
+        <div class="bg-light card__logo">
+          <svg width="260" height="56" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8,8 L2,8 L2,48 L8,48" fill="none" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="28" y1="48" x2="16" y2="8" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M36,8 L42,8 L42,48 L36,48" fill="none" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="58" y="24" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="-0.2">Property Systems</text>
+            <text x="58" y="44" font-family="Inter,sans-serif" font-size="12" font-weight="800" fill="#1d4ed8" letter-spacing="3">LAB</text>
+          </svg>
+        </div>
+      </div>
+      <p class="card__desc">A bold [ / ] bracket-and-slash mark — brackets signal code and systems, the slash signals process and action. Abstract, scalable, works at any size.</p>
+    </div>
+
+  </div>
+</body>
+</html>
