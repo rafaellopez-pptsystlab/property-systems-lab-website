@@ -178,13 +178,17 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: 84px;
 }
 .nav__logo {
-  font-size: 1rem;
-  font-weight: 800;
+  display: flex;
+  align-items: center;
   color: var(--color-white);
-  letter-spacing: -0.01em;
+}
+.nav__logo svg {
+  display: block;
+  height: 54px;
+  width: auto;
 }
 .nav__links {
   display: flex;
@@ -222,7 +226,7 @@ img { display: block; max-width: 100%; }
    HERO
    ============================================= */
 .hero {
-  padding: 160px 0 100px;
+  padding: 176px 0 100px;
   background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(37,99,235,.15) 0%, transparent 70%);
   text-align: center;
   position: relative;
