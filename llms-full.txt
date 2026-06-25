@@ -1,0 +1,82 @@
+# Property Systems Lab — Full Content Reference
+
+## Business Summary
+
+Property Systems Lab is an automation and operations support company built specifically for property management and vacation rental businesses. We help teams reduce manual admin work, improve follow-up consistency, connect disconnected systems, and scale operations without unnecessary complexity.
+
+We combine workflow automation, CRM optimization, and trained virtual assistant support — so our clients get both the systems and the human support to run them.
+
+## The Problems We Solve
+
+Property management teams commonly struggle with:
+
+- Missed owner leads because there is no consistent follow-up process
+- Manual follow-up emails and messages that should be automated
+- Disconnected systems (PMS, CRM, spreadsheets, communication tools) that don't sync
+- Slow maintenance reporting — updates buried in emails, owners left waiting
+- Repetitive admin tasks like lease renewals, document collection, and status updates
+- Overloaded internal teams buried in operational tasks that don't require their expertise
+- Messy CRM pipelines where deals, leads, and owner relationships are scattered
+- Time-consuming document workflows for leases, owner agreements, and recurring paperwork
+
+## Our Services
+
+### 1. Automation & AI Systems
+We build workflows that reduce repetitive work, improve visibility, and keep teams moving. From lead follow-up sequences to maintenance notifications, we connect systems and remove the manual steps in between. Primary tools: Zapier, n8n, API integrations, trigger-based workflows.
+
+### 2. CRM & Pipeline Optimization
+We clean up and organize sales, leasing, owner, and maintenance pipelines so teams always know what needs attention and nothing gets missed. Primary platform: HubSpot.
+
+### 3. Virtual Assistant Support
+Trained support for manual tasks that still need human judgment and follow-through — owner communications, inbox management, data entry, document tracking, and recurring operational tasks.
+
+### 4. Reporting & Operations Dashboards
+We create reports and summaries that help managers understand what needs attention — maintenance status, owner performance, leasing activity, and team workload — without digging through multiple systems. Primary tool: Google Sheets with automated data feeds.
+
+### 5. Document & Communication Workflows
+We streamline recurring documents, follow-ups, email and SMS sequences, and internal handoffs so teams spend less time on paperwork and more time on properties. Tools: PandaDoc, email/SMS automation.
+
+## Our Process
+
+1. **Review your current workflows** — structured review of how the team handles leads, maintenance, owner communications, documents, and internal handoffs to identify where time is being lost.
+2. **Identify what to automate and what to delegate** — not everything should be automated. We help decide what belongs in a workflow, what still needs a human, and what the right tools and processes are.
+3. **Build the systems and train the support process** — build and configure automations, set up CRM pipelines and reporting, and establish support processes for the VA team.
+4. **Provide ongoing automation and VA operations support** — monitor, maintain, and improve workflows over time, handling updates, catching issues, and adding new automations as the operation grows.
+
+## Why Property Systems Lab
+
+- We understand property management operations specifically — the workflows, tools, and challenges unique to LTR and STR businesses
+- We combine systems, automation, and human support — most agencies only offer one
+- We help teams scale without unnecessary complexity — we focus on the simplest system that solves the problem
+- We support both long-term and short-term rental operations
+- We focus on practical workflows that teams can realistically manage and maintain
+
+## Pricing
+
+All pricing depends on workload, number of systems, workflow complexity, and support hours required. Below are typical starting points:
+
+| Service | Price |
+|---|---|
+| Workflow Audit | Starting at $750 (one-time) |
+| Automation Implementation | Starting at $3,500 (one-time) |
+| Automation + VA Operations Support | Starting at $2,500/month |
+| Monthly Automation Support | Starting at $1,250/month |
+| Custom Operations Support | Custom quote |
+
+The Workflow Audit includes: current workflow documentation, systems and tools assessment, automation opportunity map, and a written recommendations report.
+
+The Automation + VA Operations Support package is the most popular option. It includes automation monitoring and maintenance, VA operations support, workflow updates and improvements, reporting checks, and owner and admin task support.
+
+## Free Workflow Review
+
+We offer a free 30-minute workflow review call where we map current workflows, identify where time is being lost, and provide a clear action plan — what to automate, what to delegate, and what to fix first. No pressure, no sales pitch.
+
+Book here: https://calendar.app.google/1VqYPNUPUgqqELjC9
+
+## Platforms Supported
+
+Zapier, n8n, HubSpot, Hostaway, Propertyware, PandaDoc, Google Sheets, and custom API and AI integrations.
+
+## Website
+
+https://propertysystemslab.com

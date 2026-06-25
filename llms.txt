@@ -1,0 +1,40 @@
+# Property Systems Lab
+
+> Automation and operations support for property management and vacation rental companies.
+
+Property Systems Lab helps property management and vacation rental businesses reduce manual admin work, streamline operations, and scale efficiently using AI workflows, automation, CRM optimization, and trained virtual assistant support.
+
+## Who We Serve
+
+- Long-term rental (LTR) property management companies
+- Vacation rental (STR/VR) operators and managers
+- Mixed-portfolio property management teams
+- Growing property management businesses looking to scale without adding headcount
+
+## What We Do
+
+- **Automation & AI Systems**: We build trigger-based workflows that eliminate repetitive manual steps — lead follow-up sequences, maintenance notifications, owner update automations, and system integrations using Zapier and n8n.
+- **CRM & Pipeline Optimization**: We set up and clean up sales, leasing, owner acquisition, and maintenance pipelines so teams always know what needs attention. Primary platform: HubSpot.
+- **Virtual Assistant Support**: Trained operational support for tasks that still need human judgment — owner communications, inbox management, data entry, document tracking, and recurring admin tasks.
+- **Reporting & Operations Dashboards**: Automated reports and summaries for maintenance status, owner performance, leasing activity, and team workload using Google Sheets.
+- **Document & Communication Workflows**: Streamlined document preparation, follow-up sequences, and internal handoffs using PandaDoc and email/SMS automation.
+
+## Platforms & Tools We Work With
+
+Zapier, n8n, HubSpot, Hostaway, Propertyware, PandaDoc, Google Sheets, and custom API integrations.
+
+## Pricing
+
+- Workflow Audit: Starting at $750 (one-time)
+- Automation Implementation: Starting at $3,500 (one-time)
+- Automation + VA Operations Support: Starting at $2,500/month (most popular)
+- Monthly Automation Support: Starting at $1,250/month
+- Custom Operations Support: Custom quote
+
+## Get Started
+
+Book a free 30-minute workflow review: https://calendar.app.google/1VqYPNUPUgqqELjC9
+
+## Contact
+
+Website: https://propertysystemslab.com

@@ -2,3 +2,16 @@ User-agent: *
 Allow: /
 
 Sitemap: https://propertysystemslab.com/sitemap.xml
+
+# AI crawlers — full content reference available at /llms.txt and /llms-full.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
