@@ -99,11 +99,11 @@
       'n8n', 'zap', 'map()', '.then', 'await', '?? ', '0x', 'log()'
     ];
 
-    const ACCENT   = '37,99,235';   // matches --color-accent RGB
-    const MIN_OP   = 0.12;
-    const MAX_OP   = 0.28;
-    const MIN_SIZE = 11;
-    const MAX_SIZE = 15;
+    const ACCENT   = '147,197,253'; // light blue — visible over dark bg
+    const MIN_OP   = 0.55;
+    const MAX_OP   = 1.0;
+    const MIN_SIZE = 12;
+    const MAX_SIZE = 17;
     const COUNT    = 90;
 
     let W, H, particles;
